@@ -15,11 +15,12 @@ public class FileClassFilter {
 			
 			
 			String[] contenido = carp.list((dir, name) -> name.endsWith(".txt"));
+			//String[] contenido = carp.list((dir, name) -> new File(name).canWrite());
 			for (String item : contenido)
 				System.out.println(item);
 		}
 
-		System.out.println("Programa Finalizado");
+		System.out.println();
 	}
 
 }
